@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // connect to mongo db
-const mongoUri = process.env.MONGODB_URI || 'messenger-api'
+const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/messenger-api'
 mongoose.set('useUnifiedTopology', true)
 mongoose.set('useFindAndModify', false)
 mongoose.connect(mongoUri, { useNewUrlParser: true })
